@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AGNES!</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
     <style>
       body {
         font-family: Avenir, sans-serif;
@@ -17,15 +17,13 @@
         text-align: center;
         height: 100vh;
         margin-left: 10%;
-        margin-right:10%;
-
+        margin-right: 10%;
       }
       .slider-container {
         margin: 20px 0;
         background-color: rgba(0, 0, 0, 0.27);
         padding: 1%;
         border-radius: 10px;
-     
       }
       .slider-label {
         display: block;
@@ -41,11 +39,10 @@
       .text-display {
         margin-top: 30px;
         font-size: 15px;
-  
       }
       .button-container {
         margin-top: 30px;
-         display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -68,95 +65,108 @@
         background-color: rgb(74, 28, 5);
         padding: 5%;
       }
+
+      @media screen and (max-width: 800px) {
+        body {
+          min-height: 100vh;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="everything">
-    <h1>Congratulations! You passed the test.</h1>
-    <h3>
-      Now, that you showed that our time together was as impactful to you as it
-      was to me, you have the great opportunity to experience my final creation
-      below.
-      <br />
-      <b>Please, customise your experience!</b>
-    </h3>
+      <h1>Congratulations! You passed the test.</h1>
+      <h3>
+        Now, that you showed that our time together was as impactful to you as
+        it was to me, you have the great opportunity to experience my final
+        creation below.
+        <br />
+        <b>Please, customise your experience!</b>
+      </h3>
 
-    <div class="slider-container">
-      <label class="slider-label" for="length">Length</label>
-      <input
-        type="range"
-        class="slider"
-        id="length"
-        name="length"
-        min="1"
-        max="3"
-        value="1"
-      />
-      <div class="slider-stage">
-        <span>Low</span>
-        <span>Medium</span>
-        <span>High (recommended) </span>
+      <div class="slider-container">
+        <label class="slider-label" for="length">Length</label>
+        <input
+          type="range"
+          class="slider"
+          id="length"
+          name="length"
+          min="1"
+          max="3"
+          value="1"
+        />
+        <div class="slider-stage">
+          <span>Low</span>
+          <span>Medium</span>
+          <span>High (recommended) </span>
+        </div>
       </div>
-    </div>
 
-    <div class="slider-container">
-      <label class="slider-label" for="cringe">Cringe</label>
-      <input
-        type="range"
-        class="slider"
-        id="cringe"
-        name="cringe"
-        min="1"
-        max="3"
-        value="1"
-      />
-      <div class="slider-stage">
-        <span>Low</span>
-        <span>Medium (recommended)</span>
-        <span>High</span>
+      <div class="slider-container">
+        <label class="slider-label" for="cringe">Cringe</label>
+        <input
+          type="range"
+          class="slider"
+          id="cringe"
+          name="cringe"
+          min="1"
+          max="3"
+          value="1"
+        />
+        <div class="slider-stage">
+          <span>Low</span>
+          <span>Medium (recommended)</span>
+          <span>High</span>
+        </div>
       </div>
-    </div>
 
-    <div class="text-display" id="text-display">A</div>
+      <div class="text-display" id="text-display">A</div>
 
-    <div class="button-container">
+      <div class="button-container">
         <h1>Rate your experience now</h1>
-      <a href="https://www.linkedin.com/in/ondrej-zika-a00724195/" target="_blank"><b>5*</b> best experience, I am blown away</a>
-      <a href="BAD.html" target="_blank"><b>1*</b> I am blown away for all the wrong reasons</a>
-    </div>
+        <a
+          href="https://www.linkedin.com/in/ondrej-zika-a00724195/"
+          target="_blank"
+          ><b>5*</b> best experience, I am blown away</a
+        >
+        <a href="BAD.html" target="_blank"
+          ><b>1*</b> I am blown away for all the wrong reasons</a
+        >
+      </div>
 
-    <script>
-      const lengthSlider = document.getElementById("length");
-      const cringeSlider = document.getElementById("cringe");
-      const textDisplay = document.getElementById("text-display");
+      <script>
+        const lengthSlider = document.getElementById("length");
+        const cringeSlider = document.getElementById("cringe");
+        const textDisplay = document.getElementById("text-display");
 
-      const textMap = {
-        "1-1": "Thanks",
-        "2-1": "Thank you sincerely",
-        "3-1":
-          "Thank you thanks for thanking you thanking of thanking between constant thinking of thanking.",
-        "1-2": "Deeply thank you for everything.",
-        "2-2":
-           "Deeply thank you for everything. Times several because this is meant to be longer.",
-        "3-2":
- "With all seriousness, I want to sincerely thank you. I know I missed a lot of Thursday's lessons and that's a shame because they seemed fun from the screen. I appreciate your help with my projects, I admire that you remember us (so many faces, names...?!) and somewhat manage to seem happy when you see us? Your support and attitude towards what you teach make such a difference in how I - and I am sure others - feel about the (or any) subject. I tend to get overwhelmed by people like this if I am being honest. Because I like staying to the side. But your enthusiasm is so genuine and informed, that I was left admiring and appreciating everything you did. Now, when it came to the festival, although we did not work together that much, you reassured me. Overall, Agnes, I truly appreciate what you do and HOW you do it. I came to university after a 3-year gap, hoping to become somewhat younger again, while learning. However, from my experience at LCC, I mostly feel frustrated with the lack of communication and organisation and unsatisfied with everything we are taught - from the approach of the lecturers to the materials themselves. The whole advertising course feels quite hollow. It hit me that much harder then, when I was returning my components and you smiled when seeing me, because I realised I was leaving all this, to go back to the dull and empty - and 'enthusiasless' - course. I appreciate this may come across as a bit dramatic, but I don't get excited too easily, I like laying low and something about the undemanding and slow nature of my home course suits me - I can work more in a job I hate. But now that I have experienced what university can feel like, I am indeed going to miss it very much. Thank you, Agnes." ,
-        "1-3": "Thankininky",
-        "2-3":
- "Thanks plus thanks equals SUPERTHANKS to you because I appreciate you!",
-        "3-3":
-          "Now this one is tough. It is meant to be long and super cringey, but. There is an issue with forced cringe. How does one maintain a distance while fulfilling the intended outcome? I thoroughly thought about this and found that the most deepest way of thanking you is to say: Thanks.",
-      };
+        const textMap = {
+          "1-1": "Thanks",
+          "2-1": "Thank you sincerely",
+          "3-1":
+            "Thank you thanks for thanking you thanking of thanking between constant thinking of thanking.",
+          "1-2": "Deeply thank you for everything.",
+          "2-2":
+            "Deeply thank you for everything. Times several because this is meant to be longer.",
+          "3-2":
+            "With all seriousness, I want to sincerely thank you. I know I missed a lot of Thursday's lessons and that's a shame because they seemed fun from the screen. I appreciate your help with my projects, I admire that you remember us (so many faces, names...?!) and somewhat manage to seem happy when you see us? Your support and attitude towards what you teach make such a difference in how I - and I am sure others - feel about the (or any) subject. I tend to get overwhelmed by people like this if I am being honest. Because I like staying to the side. But your enthusiasm is so genuine and informed, that I was left admiring and appreciating everything you did. Now, when it came to the festival, although we did not work together that much, you reassured me. Overall, Agnes, I truly appreciate what you do and HOW you do it. I came to university after a 3-year gap, hoping to become somewhat younger again, while learning. However, from my experience at LCC, I mostly feel frustrated with the lack of communication and organisation and unsatisfied with everything we are taught - from the approach of the lecturers to the materials themselves. The whole advertising course feels quite hollow. It hit me that much harder then, when I was returning my components and you smiled when seeing me, because I realised I was leaving all this, to go back to the dull and empty - and 'enthusiasless' - course. I appreciate this may come across as a bit dramatic, but I don't get excited too easily, I like laying low and something about the undemanding and slow nature of my home course suits me - I can work more in a job I hate. But now that I have experienced what university can feel like, I am indeed going to miss it very much. Thank you, Agnes.",
+          "1-3": "Thankininky",
+          "2-3":
+            "Thanks plus thanks equals SUPERTHANKS to you because I appreciate you!",
+          "3-3":
+            "Now this one is tough. It is meant to be long and super cringey, but. There is an issue with forced cringe. How does one maintain a distance while fulfilling the intended outcome? I thoroughly thought about this and found that the most deepest way of thanking you is to say: Thanks.",
+        };
 
-      function updateText() {
-        const lengthValue = lengthSlider.value;
-        const cringeValue = cringeSlider.value;
-        const key = `${lengthValue}-${cringeValue}`;
-        textDisplay.textContent = textMap[key];
-      }
+        function updateText() {
+          const lengthValue = lengthSlider.value;
+          const cringeValue = cringeSlider.value;
+          const key = `${lengthValue}-${cringeValue}`;
+          textDisplay.textContent = textMap[key];
+        }
 
-      lengthSlider.addEventListener("input", updateText);
-      cringeSlider.addEventListener("input", updateText);
-    </script>
+        lengthSlider.addEventListener("input", updateText);
+        cringeSlider.addEventListener("input", updateText);
+      </script>
     </div>
   </body>
 </html>

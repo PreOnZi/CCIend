@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>... Irti ...</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
     <style>
       body {
         font-family: Avenir, sans-serif;
@@ -17,15 +17,13 @@
         text-align: center;
         height: 100vh;
         margin-left: 10%;
-        margin-right:10%;
-
+        margin-right: 10%;
       }
       .slider-container {
         margin: 20px 0;
         background-color: rgba(0, 0, 0, 0.27);
         padding: 1%;
         border-radius: 10px;
-     
       }
       .slider-label {
         display: block;
@@ -41,11 +39,10 @@
       .text-display {
         margin-top: 30px;
         font-size: 15px;
-  
       }
       .button-container {
         margin-top: 30px;
-         display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -68,95 +65,108 @@
         background-color: rgb(74, 28, 5);
         padding: 5%;
       }
+
+      @media screen and (max-width: 800px) {
+        body {
+          min-height: 100vh;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="everything">
-    <h1>Congratulations! You passed the test.</h1>
-    <h3>
-      Now, that you showed that our time together was as impactful to you as it
-      was to me, you have the great opportunity to experience my final creation
-      below.
-      <br />
-      <b>Please, customise your experience!</b>
-    </h3>
+      <h1>Congratulations! You passed the test.</h1>
+      <h3>
+        Now, that you showed that our time together was as impactful to you as
+        it was to me, you have the great opportunity to experience my final
+        creation below.
+        <br />
+        <b>Please, customise your experience!</b>
+      </h3>
 
-    <div class="slider-container">
-      <label class="slider-label" for="length">Length</label>
-      <input
-        type="range"
-        class="slider"
-        id="length"
-        name="length"
-        min="1"
-        max="3"
-        value="1"
-      />
-      <div class="slider-stage">
-        <span>Low</span>
-        <span>Medium</span>
-        <span>High (recommended) </span>
+      <div class="slider-container">
+        <label class="slider-label" for="length">Length</label>
+        <input
+          type="range"
+          class="slider"
+          id="length"
+          name="length"
+          min="1"
+          max="3"
+          value="1"
+        />
+        <div class="slider-stage">
+          <span>Low</span>
+          <span>Medium</span>
+          <span>High (recommended) </span>
+        </div>
       </div>
-    </div>
 
-    <div class="slider-container">
-      <label class="slider-label" for="cringe">Cringe</label>
-      <input
-        type="range"
-        class="slider"
-        id="cringe"
-        name="cringe"
-        min="1"
-        max="3"
-        value="1"
-      />
-      <div class="slider-stage">
-        <span>Low</span>
-        <span>Medium (recommended)</span>
-        <span>High</span>
+      <div class="slider-container">
+        <label class="slider-label" for="cringe">Cringe</label>
+        <input
+          type="range"
+          class="slider"
+          id="cringe"
+          name="cringe"
+          min="1"
+          max="3"
+          value="1"
+        />
+        <div class="slider-stage">
+          <span>Low</span>
+          <span>Medium (recommended)</span>
+          <span>High</span>
+        </div>
       </div>
-    </div>
 
-    <div class="text-display" id="text-display">A</div>
+      <div class="text-display" id="text-display">A</div>
 
-    <div class="button-container">
+      <div class="button-container">
         <h1>Rate your experience now</h1>
-      <a href="https://www.linkedin.com/in/ondrej-zika-a00724195/" target="_blank"><b>5*</b> best experience, I am blown away</a>
-      <a href="BAD.html" target="_blank"><b>1*</b> I am blown away for all the wrong reasons</a>
-    </div>
+        <a
+          href="https://www.linkedin.com/in/ondrej-zika-a00724195/"
+          target="_blank"
+          ><b>5*</b> best experience, I am blown away</a
+        >
+        <a href="BAD.html" target="_blank"
+          ><b>1*</b> I am blown away for all the wrong reasons</a
+        >
+      </div>
 
-    <script>
-      const lengthSlider = document.getElementById("length");
-      const cringeSlider = document.getElementById("cringe");
-      const textDisplay = document.getElementById("text-display");
+      <script>
+        const lengthSlider = document.getElementById("length");
+        const cringeSlider = document.getElementById("cringe");
+        const textDisplay = document.getElementById("text-display");
 
-      const textMap = {
-        "1-1": "Thanks",
-        "2-1": "Thank you sincerely",
-        "3-1":
-          "Thank you thanks for thanking you thanking of thanking between constant thinking of thanking.",
-        "1-2": "Deeply thank you for everything.",
-        "2-2":
-                    "Deeply thank you for everything. Times several because this is meant to be longer.",
-        "3-2":
-"What do I say here, Irti? You were sort of in and out of my view the entire time. You were the first of the CCI team who I noticed was... Different. In a good way, obviously. Different to my home course and the lecturers I am (was) used to. Without talking too poorly about them, because there are always exceptions, they would unlikely make the same effort you did. I am predictably talking about you reading my journal and reflecting on my rant in person. That was a strange moment, I must say, because while I guess I was writing in a way someone may read it, I never thought anybody would. While your style of teaching can be overwhelming at times, the thing that makes it make sense is, that you care. Or at least you seem to. Can't assume anything nowadays. Haha. Not only do you care about what you teach, however, but you care about us and what we create. I noticed that first with my world map, plotter and magnet. Frankly, it was difficult to believe it. Especially when you asked for pictures, I was questioning what was it about... The project can't be that great... Although, the map really looks cool. I still have it. But then, the biggest thing was unsurprisingly the festival. You pushed me so much, which you are very much aware of. And I was so ready to get in your face about it (politely obviously). It did seem like you completely forgot about printing times, my commute or work commitments. I am going to repeat that it was worth it because it is pretty and everything. But man... Anyway. I hope you are proud of it as well. I was in touch with you the most of all the other lecturers and have, therefore the most to say. But this is long enough. Irti, I thank you for what and how you do it. I appreciate your effort to get the best of me without being weirdly pushy as some people can be. You are just pushy. Haha. I will miss this going forward.",
-        "1-3": "Thankininky",
-        "2-3":
-          "Thanks plus thanks equals SUPERTHANKS to you because I appreciate you!",
-        "3-3":
-          "Now this one is tough. It is meant to be long and super cringey, but. There is an issue with forced cringe. How does one maintain a distance while fulfilling the intended outcome? I thoroughly thought about this and found that the most deepest way of thanking you is to say: Thanks.",
-      };
+        const textMap = {
+          "1-1": "Thanks",
+          "2-1": "Thank you sincerely",
+          "3-1":
+            "Thank you thanks for thanking you thanking of thanking between constant thinking of thanking.",
+          "1-2": "Deeply thank you for everything.",
+          "2-2":
+            "Deeply thank you for everything. Times several because this is meant to be longer.",
+          "3-2":
+            "What do I say here, Irti? You were sort of in and out of my view the entire time. You were the first of the CCI team who I noticed was... Different. In a good way, obviously. Different to my home course and the lecturers I am (was) used to. Without talking too poorly about them, because there are always exceptions, they would unlikely make the same effort you did. I am predictably talking about you reading my journal and reflecting on my rant in person. That was a strange moment, I must say, because while I guess I was writing in a way someone may read it, I never thought anybody would. While your style of teaching can be overwhelming at times, the thing that makes it make sense is, that you care. Or at least you seem to. Can't assume anything nowadays. Haha. Not only do you care about what you teach, however, but you care about us and what we create. I noticed that first with my world map, plotter and magnet. Frankly, it was difficult to believe it. Especially when you asked for pictures, I was questioning what was it about... The project can't be that great... Although, the map really looks cool. I still have it. But then, the biggest thing was unsurprisingly the festival. You pushed me so much, which you are very much aware of. And I was so ready to get in your face about it (politely obviously). It did seem like you completely forgot about printing times, my commute or work commitments. I am going to repeat that it was worth it because it is pretty and everything. But man... Anyway. I hope you are proud of it as well. I was in touch with you the most of all the other lecturers and have, therefore the most to say. But this is long enough. Irti, I thank you for what and how you do it. I appreciate your effort to get the best of me without being weirdly pushy as some people can be. You are just pushy. Haha. I will miss this going forward.",
+          "1-3": "Thankininky",
+          "2-3":
+            "Thanks plus thanks equals SUPERTHANKS to you because I appreciate you!",
+          "3-3":
+            "Now this one is tough. It is meant to be long and super cringey, but. There is an issue with forced cringe. How does one maintain a distance while fulfilling the intended outcome? I thoroughly thought about this and found that the most deepest way of thanking you is to say: Thanks.",
+        };
 
-      function updateText() {
-        const lengthValue = lengthSlider.value;
-        const cringeValue = cringeSlider.value;
-        const key = `${lengthValue}-${cringeValue}`;
-        textDisplay.textContent = textMap[key];
-      }
+        function updateText() {
+          const lengthValue = lengthSlider.value;
+          const cringeValue = cringeSlider.value;
+          const key = `${lengthValue}-${cringeValue}`;
+          textDisplay.textContent = textMap[key];
+        }
 
-      lengthSlider.addEventListener("input", updateText);
-      cringeSlider.addEventListener("input", updateText);
-    </script>
+        lengthSlider.addEventListener("input", updateText);
+        cringeSlider.addEventListener("input", updateText);
+      </script>
     </div>
   </body>
 </html>
