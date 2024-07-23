@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>murad</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+      body {
+        font-family: Avenir, sans-serif;
+        background-color: #310000;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        margin-left: 10%;
+        margin-right:10%;
+
+      }
+      .slider-container {
+        margin: 20px 0;
+        background-color: rgba(0, 0, 0, 0.27);
+        padding: 1%;
+        border-radius: 10px;
+     
+      }
+      .slider-label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .slider {
+        width: 100%;
+      }
+      .slider-stage {
+        display: flex;
+        justify-content: space-between;
+      }
+      .text-display {
+        margin-top: 30px;
+        font-size: 15px;
+  
+      }
+      .button-container {
+        margin-top: 30px;
+      }
+      .button-container a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin: 0 10px;
+        transition: background-color 0.3s, color 0.3s;
+        background-color: rgb(110, 75, 30);
+      }
+      .button-container a:hover {
+        background-color: white;
+        color: #1f0000;
+      }
+      .everything {
+        background-color: rgb(74, 28, 5);
+        padding: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="everything">
+    <h1>Congratulations! You passed the test.</h1>
+    <h3>
+      Now, that you showed that our time together was as impactful to you as it
+      was to me, you have the great opportunity to experience my final creation
+      below.
+      <br />
+      <b>Please, customise your experience!</b>
+    </h3>
+
+    <div class="slider-container">
+      <label class="slider-label" for="length">Length</label>
+      <input
+        type="range"
+        class="slider"
+        id="length"
+        name="length"
+        min="1"
+        max="3"
+        value="1"
+      />
+      <div class="slider-stage">
+        <span>Low</span>
+        <span>Medium (recommended) </span>
+        <span>High</span>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <label class="slider-label" for="cringe">Cringe</label>
+      <input
+        type="range"
+        class="slider"
+        id="cringe"
+        name="cringe"
+        min="1"
+        max="3"
+        value="1"
+      />
+      <div class="slider-stage">
+        <span>Low</span>
+        <span>Medium (recommended)</span>
+        <span>High</span>
+      </div>
+    </div>
+
+    <div class="text-display" id="text-display">A</div>
+
+    <div class="button-container">
+        <h1>Rate your experience now</h1>
+      <a href="https://www.linkedin.com/in/ondrej-zika-a00724195/" target="_blank"><b>5*</b> best experience, I am blown away</a>
+      <a href="BAD.html" target="_blank"><b>1*</b> I am blown away for all the wrong reasons</a>
+    </div>
+
+    <script>
+      const lengthSlider = document.getElementById("length");
+      const cringeSlider = document.getElementById("cringe");
+      const textDisplay = document.getElementById("text-display");
+
+      const textMap = {
+        "1-1": "Thanks",
+        "2-1": "Thank you sincerely",
+        "3-1":
+          "Thank you thanks for thanking you thanking of thanking between constant thinking of thanking.",
+        "1-2": "Deeply thank you for everything.",
+        "2-2":
+        "Murad. While I may have spent the least time in your classes, they (and mostly you) left an impression without a doubt. I know you are very knowledgeable and want to make sure that it comes across. It is, however, things outside the curriculum that left the most impression. Your understanding and kindness whenever someone (including me!) needed it, was astonishing. I know I told you that when it was happening, but I want you to know that it stuck with me. You offering a mended approach to the course, offering a hand and being willing to adapt to my time capabilities really blew my mind. I think I insinuated it when we spoke over pizza, but I would like to repeat that; this was the exact opposite of what happened on my home course and I was not even asking for as much there. You know what left a better impression. University has been tricky for me. Without belting out my entire life story, I struggle to find peers. I moved out of the Czech republic at 19, found a job in the UK and worked for over 3 years before returning to education. It was an attempt to get out of a job that is strangling me (just celebrated 5 years at it... Yay). It was actually an attempt to get out of the country, but that's way too long. On top of that, it was an attempt to delay adulthood I suppose in a way. I wanted to join clubs, find friends and do all the fun stuff people associate with university. I soon realised that 90% of what I hoped for was not going to happen. I still had to go to work, which meant I could not commit to any club the way I was hoping. The course itself felt (still does) dull and hollow. And through all these things, I realised I struggle to connect with most people in my class. After two years in advertising, I have one real friend and 2.5 more whom I had to go for a trip at the end of our exchange in Toronto with to start talking. Anyway, all that is to say is that university was nothing like I hoped. Partially because I was delusional, and partially because some courses really are just fillers. The year at CCI finally felt like the entire time at LCC should have. I felt like I was learning. And from people who care about the subject as well as us, students. I did not make a single friend, but there was something about people here that seemed more intentional and the entire 5th floor seemed much friendlier than what I experienced. I have gone on a tangent here. I just wanted to stress how important this year was to me and how important a role you played in it going this way. Thank you, Murad. I really appreciate what you do and did for me.",
+        "3-2":
+          "Deeply thank you for everything. Times several because this is meant to be longer.",
+        "1-3": "Thankininky",
+        "2-3":
+          "Thanks plus thanks equals SUPERTHANKS to you because I appreciate you!",
+        "3-3":
+          "Now this one is tough. It is meant to be long and super cringey, but. There is an issue with forced cringe. How does one maintain a distance while fulfilling the intended outcome? I thoroughly thought about this and found that the most deepest way of thanking you is to say: Thanks.",
+      };
+
+      function updateText() {
+        const lengthValue = lengthSlider.value;
+        const cringeValue = cringeSlider.value;
+        const key = `${lengthValue}-${cringeValue}`;
+        textDisplay.textContent = textMap[key];
+      }
+
+      lengthSlider.addEventListener("input", updateText);
+      cringeSlider.addEventListener("input", updateText);
+    </script>
+    </div>
+  </body>
+</html>
