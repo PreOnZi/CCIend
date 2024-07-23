@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select a player</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="quiz-title">Who are you?</h2>
+        <div id="quiz-selection">
+            <button class="quiz-button" class="hidden" data-quiz="0">Agnes</button>
+           
+            <button class="quiz-button" class="hidden" data-quiz="1">Irti</button>
+            <br>
+            <button class="quiz-button" class="hidden" data-quiz="2">Jen</button>
+         
+            <button class="quiz-button" class="hidden" data-quiz="3">Murad</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <div id="question-container"></div>
+            <div id="options-container"></div>
+        </div>
+        <button id="next-button">next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
